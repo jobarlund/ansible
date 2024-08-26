@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install epel-relase and xrdp package
+    package:
+      name: 
+        - epel-release
+        - xrdp
+      state: latest
+      update_cache: yes
+
